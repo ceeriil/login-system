@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  color: #ddd;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-image: url("https://images.unsplash.com/photo-1556155092-490a1ba16284?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFua2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(23, 27, 34, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.brand h1 {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+
+.brand p {
+  margin-bottom: 10rem;
+}
+
+.btn {
+  border: 1px solid #ddd;
+  background-color: rgba(23, 27, 34, 0.8);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  width: 50vw;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.sign-in-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ddd;
+  height: 40vh;
+  width: 100%;
+  color: #111;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  transition: 0.5s ease;
+  transform: translateY(100%);
+}
+
+.sign-in-form h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sign-in-form input {
+  border: none;
+  color: #111;
+  width: 80%;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font: inherit;
+}
+
+.sign-in-form .submit-btn {
+  background-color: rgb(7, 41, 85);
+  color: #ddd;
+  margin-top: 2.5rem;
+}
+
+.sign-in-form .close {
+  font-size: 2rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #111;
+  cursor: pointer;
+  border: 1px solid #161616;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 1rem;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(7, 41, 85);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+header img {
+  width: 40px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 20;
+  background-color: #ddd;
+  padding: 2rem;
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+  color: #111;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu h2 {
+  margin: 1rem 0;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 2rem 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #aaa;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #111;
+}
